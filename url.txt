@@ -1,0 +1,3 @@
+https://www.google.com/m8/feeds/contacts/default/thin?alt=json&access_token=ya29.GlujBla2IgbP61McfiApabZ6YciIV5k5CLFwMZnNn5sTZtlVT7pxcXuWqgwYqabSGfs-ZEifiM0sj-Ljf6ebDfsj0CeGorJ0__GlPoACu9udgw9w3aJYwjALFYYS&max-results=500&v=3.0
+
+https://www.google.com/m8/feeds/contacts/default/thin?alt=json&access_token=ya29.GlujBnWvw2dkZp1dYvx7PaNJ4gIZ2y26nAIxukB8vE1IdbzcD5qbB7HlxVOP7kZutOSMSoeJuRFUDWf-ZRpGCSBUarecKWOMmY9_kPLD-f-w7RZpND5Ml-sVlrBB&max-results=500&v=3.0

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GoogleContactAPI</title>
+    <link rel="icon" href="icon.jpg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="skriptaDodaj.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+    <script src="https://apis.google.com/js/client.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Google Contacts API</h1>
+                <p class="lead">Upravljajte svojim kontaktima na naš način!</p>
+                <h1 id="korisnik"></h1>
+                <h2 id="mejl"></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+              <div class="list-group">
+                <a href="index.html" class="list-group-item list-group-item-action">Uloguj se</a>
+                <a href="#" class="list-group-item list-group-item-action active">Dodaj kontakt</a>
+                <a href="izmeni.html" class="list-group-item list-group-item-action">Izmeni kontakte</a>
+                <a href="obrisi.html" class="list-group-item list-group-item-action">Obrisi kontakt</a>
+              </div>
+            </div>
+            <div class="col-8">
+                <form>
+                    <div class="form-group">
+                      <label>Ime</label>
+                      <input class="form-control" type="text" id="ime" placeholder="Pera Perić">
+                    </div>
+                    <div class="form-group">
+                      <label>Telefon</label>
+                      <input class="form-control" type="text" id="telefon" placeholder="+647893302">
+                    </div>
+                    <div class="form-group">
+                        <label>Email adresa</label>
+                        <input type="email" class="form-control" id="email" placeholder="ime@gmail.com">
+                    </div>
+                  </form>
+                  <button type="submit" class="btn btn-primary" onclick="init()">Submit</button>
+                  <h3>Podaci</h3>
+              <table class="table" name="tableD">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Ime</th>
+                    <th scope="col">Telefon</th>
+                    <th scope="col">Email</th>
+                  </tr>
+                </thead>
+                <tbody>
+                
+                </tbody>
+              </table> 
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
